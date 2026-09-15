@@ -1,0 +1,58 @@
+﻿*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+body {
+    background-color: #FFC0CB;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 6vw, 3.75rem);
+    padding: clamp(0.75rem, 3vw, 2rem) 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(1rem, 3vw, 2.5rem);
+    padding: clamp(1rem, 4vw, 3rem) 1rem;
+    flex: 1;
+}
+
+.gallery a {
+    display: block;
+    width: clamp(140px, 40vw, 400px);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 0.75rem 1.5rem;
+    text-align: right;
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+}

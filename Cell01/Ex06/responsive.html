@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Website</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        body {
+            background-color: #FFC0CB;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── Header ─────────────────────────────────────────── */
+        h1 {
+            text-align: center;
+            font-size: clamp(1.5rem, 6vw, 3.75rem);
+            padding: clamp(0.75rem, 3vw, 2rem) 1rem;
+        }
+
+        /* ── Image gallery ───────────────────────────────────── */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(1rem, 3vw, 2.5rem);
+            padding: clamp(1rem, 4vw, 3rem) 1rem;
+            flex: 1;
+        }
+
+        .gallery a {
+            display: block;
+            width: clamp(140px, 40vw, 400px);
+        }
+
+        .gallery img {
+            width: 100%;               /* image follows its container */
+            height: auto;              /* keeps aspect ratio         */
+            display: block;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.04);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+        }
+
+        /* ── Footer ─────────────────────────────────────────── */
+        footer {
+            border-top: 1px solid rgba(0, 0, 0, 0.15);
+            padding: 0.75rem 1.5rem;
+            text-align: right;
+            font-size: clamp(0.75rem, 1.5vw, 1rem);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Online Shoping Website!</h1>
+
+    <div class="gallery">
+        <a href="https://shopee.co.th/shop/1044298006?mmp_pid=an_15205100000&uls_trackid=56hc0jua002s&utm_campaign=id_5LsU5YwsjsT&utm_content=1SEP-SUBAFF---&utm_medium=affiliates&utm_source=an_15205100000&utm_term=fgk6ypi89s8s&gad_source=1">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopee_logo.svg/1920px-Shopee_logo.svg.png" alt="Shopee">
+        </a>
+        <a href="https://pages.lazada.co.th/wow/gcp/route/lazada/th/upr_1000345_lazada/channel/th/upr-router/th?hybrid=1&data_prefetch=true&at_iframe=1&lzd_navbar_hidden=true&wh_pid=%2Flazada%2Fchannel%2Fth%2Faffiliate%2Fams_lp%2Falp-native&prefetch_replace=1&ntvtype=10&ntv_gcp_cache=0&ntv_gcp_prefetch=1&t=ntv&exlaz=e_ktHPBnk7H%252BZsbdaDA0DvZJn9Ji3%252FSTAWDAo3n60nGqFwfKd6uf5SzAoQyImlfTPCB%252F%252FWJ%252BYBXH4Kz7NNbuv8%252BxlguXCOM6NHOeOaz2oUA1QUr03zp0NFmL9lxH8yN0%252Fj%252FM2U1WIqc6wouqEhUVJDR%252BItvEl8y%252Bl1iIVFRC7kSbqZSbJ2roX2MRRPhZi80mGx0E6w7d0B%252FFRW%252FRdxQG484i6j5ILhjhTMxHbR4OFocinX8ihLrvz8X84ULf1%252B7YbuNk8SeV5niRyNlTK%252BMXwmyKTkRe6CXsYl5qKIpQcLopnadjyWpeG%252FuHV0ZvOeGENU&dsource=share&laz_share_info=3700174981_1_9300_100557024298_3700176981_null&laz_token=90b9c809292d227241731582c2076ca4&gad_source=1&gclid=CjwKCAjw2aPVBhBkEiwA0Cptt1iAVryGQRcqE-KyzY7XJYVQUpf3K7tRwZ93vWrY0NiP240NjK-WWxoCR9UQAvD_BwE">
+            <img src="https://laz-img-cdn.alicdn.com/tfs/TB1PApewFT7gK0jSZFpXXaTkpXa-200-200.png" alt="Lazada">
+        </a>
+    </div>
+
+    <footer>
+        <hr style="margin-bottom: 0.5rem; border-color: rgba(0,0,0,0.15);">
+        <p>&copy; wil 2026</p>
+    </footer>
+
+</body>
+</html>
