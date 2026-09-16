@@ -1,0 +1,45 @@
+.image-one {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-two {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("image2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-block {
+    width: 100%;
+    height: 100vh;
+
+    color : white;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
