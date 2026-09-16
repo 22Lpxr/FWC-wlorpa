@@ -54,7 +54,7 @@
     color: #003366;
 }
 
-/* Show dropdown when button is focused */
+
 .hamburger-wrapper:focus-within .dropdown {
     display: block;
 }
