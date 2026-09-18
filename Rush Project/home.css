@@ -6,7 +6,7 @@
 
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #0f172a;
+    background-color: #6F4E37;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -32,19 +32,8 @@ body {
 
 .home-header p {
     font-size: 1rem;
-    color: #64748b;
+    color: #ffffff;
     letter-spacing: 1px;
-}
-
-/* ── Divider line under title ── */
-.home-header::after {
-    content: "";
-    display: block;
-    width: 48px;
-    height: 3px;
-    background-color: #38bdf8;
-    margin: 20px auto 0;
-    border-radius: 2px;
 }
 
 /* ── Button Group ── */
@@ -61,69 +50,78 @@ body {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    background-color: #1e293b;
-    border: 1px solid #334155;
+    border: 1px solid transparent;
     border-radius: 16px;
-    padding: 48px 52px;
-    min-width: 220px;
-    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    padding: 48px 0;
+    /* Equal fixed size for both cards */
+    width: 260px;
+    min-height: 320px;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .profile-btn:hover {
     transform: translateY(-6px);
-    border-color: #38bdf8;
-    box-shadow: 0 12px 32px rgba(56, 189, 248, 0.12);
 }
 
-/* Avatar circle */
-.avatar {
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    background-color: #0f172a;
-    border: 2px solid #334155;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 24px;
-    transition: border-color 0.2s ease;
+/* ── wlorpa — pink ── */
+.card-wlorpa {
+    background-color: #f7a1b5;
+    border-color: #e07a94;
 }
 
-.profile-btn:hover .avatar {
-    border-color: #38bdf8;
+.card-wlorpa:hover {
+    box-shadow: 0 12px 32px rgba(224, 122, 148, 0.4);
 }
 
-/* Initials inside avatar */
-.avatar span {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #38bdf8;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.card-wlorpa .avatar span {
+    color: #c5179a;
 }
 
-.profile-btn .username {
-    font-size: 0.8rem;
-    color: #38bdf8;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 6px;
+.card-wlorpa .username {
+    color: #7a1535;
 }
 
-.profile-btn .name {
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: #f1f5f9;
-    margin-bottom: 20px;
+.card-wlorpa .name {
+    color: #3b0a1a;
 }
 
-.profile-btn .cta {
-    font-size: 0.85rem;
-    color: #64748b;
-    letter-spacing: 1px;
-    transition: color 0.2s ease;
+.card-wlorpa .cta {
+    color: #7a1535;
+    background-color: rgba(187, 49, 86, 0.15);
 }
 
-.profile-btn:hover .cta {
-    color: #38bdf8;
+.card-wlorpa:hover .cta {
+    background-color: rgba(187, 49, 86, 0.3);
+}
+
+/* ── mchortch — green ── */
+.card-mchortch {
+    background-color: #a7f3d0;
+    border-color: #6ee7b7;
+}
+
+.card-mchortch:hover {
+    box-shadow: 0 12px 32px rgba(52, 211, 153, 0.35);
+}
+
+.card-mchortch .avatar span {
+    color: #087204;
+}
+
+.card-mchortch .username {
+    color: #065f46;
+}
+
+.card-mchortch .name {
+    color: #022c22;
+}
+
+.card-mchortch .cta {
+    color: #065f46;
+    background-color: rgba(5, 150, 105, 0.15);
+}
+
+.card-mchortch:hover .cta {
+    background-color: rgba(5, 150, 105, 0.3);
 }
